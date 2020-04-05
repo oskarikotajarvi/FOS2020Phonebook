@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "build:ui": "rm -rf build && cd ./phonebook_frontend && npm run build --prod && cp -r build ../",
+    "build:ui": "rm -rf build && cd ../fullstackopen2019/osa3/phonebook-frontend && npm run build --prod && cp -r build ../../../FOS2020Phonebook",
     "deploy": "git push heroku master",
     "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push && npm run deploy",
     "logs:prod": "heroku logs --tail",
